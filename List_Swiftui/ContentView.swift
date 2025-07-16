@@ -10,28 +10,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack{
-            VStack {
-                List{
-                    ForEach(Animal.allCases,id:\.self){ animal in
+            List{
+                ForEach(Animal.allCases,id:\.self){ animal in
+                    
+                    NavigationLink(destination:DetailView(animal:animal)){
                         
-                        NavigationLink(destination:DetailView(animal:animal)){
-                            
-                            HStack {
-                                Image(animal.iconName)
-                                Text(animal.name)
-                            }
-                            
+                        HStack {
+                            Image(animal.iconName)
+                            Text(animal.name)
                         }
                         
-                        
                     }
+                    
+                    
                 }
             }
-            .padding()
+            .navigationTitle("動物")
         }
         
     }
 }
+
+//SwiftUIではListにpaddingを加えるとListが灰色に浮き出る
 
 #Preview {
     ContentView()
