@@ -10,9 +10,22 @@
 		23223FB82E212DCD0017586F /* List_Swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = List_Swiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		232240A52E212F040017586F /* Exceptions for "List_Swiftui" folder in "Compile Sources" phase from "List_Swiftui" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 23223FB42E212DCD0017586F /* Sources */;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		23223FBA2E212DCD0017586F /* List_Swiftui */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				232240A52E212F040017586F /* Exceptions for "List_Swiftui" folder in "Compile Sources" phase from "List_Swiftui" target */,
+			);
 			path = List_Swiftui;
 			sourceTree = "<group>";
 		};
